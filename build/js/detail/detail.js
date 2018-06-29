@@ -1,0 +1,1 @@
+"use strict";define(["jquery","getUrl","handle","text!template/detail.html"],function(e,t,i,a){var l=t("id");e.ajax({url:"/api/detail?id="+l,dataType:"json",success:function(t){e(".book-title").html(t.item.title),i(a,t,".main")}})});
